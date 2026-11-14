@@ -1,392 +1,253 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2 | Rolls-Royce Financial Analysis Dashboard</title>
-
-    <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-    }
-
-    body{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background:#2b2d42;
-        color:white;
-        line-height:1.6;
-    }
-
-    nav{
-        background:#1f2133;
-        padding:20px 8%;
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        position:sticky;
-        top:0;
-        z-index:100;
-    }
-
-    nav h1{
-        color:#c77dff;
-        font-size:1.5rem;
-    }
-
-    nav ul{
-        list-style:none;
-        display:flex;
-        gap:25px;
-    }
-
-    nav a{
-        color:white;
-        text-decoration:none;
-        transition:0.3s;
-    }
-
-    nav a:hover{
-        color:#c77dff;
-    }
-
-    .hero{
-        padding:90px 10%;
-        text-align:center;
-    }
-
-    .hero h2{
-        font-size:3rem;
-        color:#c77dff;
-        margin-bottom:20px;
-    }
-
-    .hero p{
-        max-width:900px;
-        margin:auto;
-        color:#d5d5d5;
-        font-size:1.1rem;
-    }
-
-    .section{
-        padding:60px 10%;
-    }
-
-    .section h3{
-        color:#c77dff;
-        margin-bottom:25px;
-        font-size:2rem;
-    }
-
-    .dashboard-preview img{
-        width:100%;
-        border-radius:20px;
-        border:2px solid #7b2cbf;
-        box-shadow:0 10px 30px rgba(0,0,0,0.4);
-    }
-
-    .kpi-grid{
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-        gap:25px;
-        margin-top:30px;
-    }
-
-    .kpi-card{
-        background:#3a3d5c;
-        padding:25px;
-        border-radius:15px;
-        text-align:center;
-        transition:0.3s;
-    }
-
-    .kpi-card:hover{
-        transform:translateY(-5px);
-        box-shadow:0 5px 20px rgba(123,44,191,0.4);
-    }
-
-    .kpi-card h4{
-        color:#e0aaff;
-        font-size:1rem;
-        margin-bottom:10px;
-    }
-
-    .kpi-card p{
-        font-size:2rem;
-        font-weight:bold;
-        color:white;
-    }
-
-    .cards{
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-        gap:25px;
-    }
-
-    .card{
-        background:#3a3d5c;
-        padding:25px;
-        border-radius:15px;
-        transition:0.3s;
-    }
-
-    .card:hover{
-        transform:translateY(-5px);
-        box-shadow:0 6px 18px rgba(123,44,191,0.4);
-    }
-
-    .card h4{
-        color:#e0aaff;
-        margin-bottom:15px;
-    }
-
-    table{
-        width:100%;
-        border-collapse:collapse;
-        margin-top:20px;
-        overflow:hidden;
-        border-radius:15px;
-    }
-
-    th{
-        background:#7b2cbf;
-        padding:14px;
-        text-align:center;
-    }
-
-    td{
-        background:#3a3d5c;
-        padding:12px;
-        text-align:center;
-        border-bottom:1px solid #555;
-    }
-
-    tr:hover td{
-        background:#44476a;
-    }
-
-    .insight-box{
-        background:#3a3d5c;
-        padding:30px;
-        border-radius:15px;
-        border-left:5px solid #c77dff;
-    }
-
-    .btn{
-        display:inline-block;
-        margin-top:25px;
-        padding:12px 28px;
-        background:#7b2cbf;
-        color:white;
-        text-decoration:none;
-        border-radius:8px;
-        transition:0.3s;
-    }
-
-    .btn:hover{
-        background:#9d4edd;
-    }
-
-    footer{
-        background:#1f2133;
-        text-align:center;
-        padding:30px;
-        margin-top:50px;
-        color:#b8b8b8;
-    }
-    </style>
-
-</head>
-
-<body>
-
-<nav>
-    <h1>Rayyaan Akhtar</h1>
-
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project1.html">Project 1</a></li>
-    </ul>
-</nav>
-
-<section class="hero">
-
-    <h2>Rolls-Royce Financial Performance Dashboard</h2>
+<div class="hero">
 
-    <p>
-        This project analyses Rolls-Royce Holdings plc using financial data
-        extracted from annual reports between 2020 and 2025. The dashboard
-        evaluates revenue growth, operating profit, ROCE, cash conversion,
-        and future forecasts to assess the company's financial recovery,
-        efficiency improvements and long-term outlook.
-    </p>
-
-</section>
-
-<section class="section dashboard-preview">
+<h1>Rolls-Royce Financial Performance Dashboard</h1>
 
-    <h3>Dashboard Overview</h3>
+<p>
+Microsoft Excel | Financial Analysis | Forecasting
+</p>
 
-    <img src="images/project2-dashboard.png"
-         alt="Rolls-Royce Financial Dashboard">
+</div>
 
-</section>
-
-<section class="section">
+<div class="container">
 
-    <h3>Headline KPIs</h3>
+<a href="index.html" class="back-btn">
+← Back to Portfolio
+</a>
 
-    <div class="kpi-grid">
+<div class="section">
 
-        <div class="kpi-card">
-            <h4>Latest Revenue</h4>
-            <p>£18.9bn</p>
-        </div>
-
-        <div class="kpi-card">
-            <h4>Operating Profit</h4>
-            <p>£2.5bn</p>
-        </div>
+<h2>Project Overview</h2>
 
-        <div class="kpi-card">
-            <h4>ROCE</h4>
-            <p>29%</p>
-        </div>
+<p>
+This project analysed Rolls-Royce Holdings plc using
+financial information extracted from annual reports
+between 2020 and 2025. The objective was to evaluate
+the company's post-pandemic recovery, profitability,
+operational efficiency and future growth prospects.
 
-        <div class="kpi-card">
-            <h4>Cash Conversion</h4>
-            <p>125%</p>
-        </div>
+An interactive Excel dashboard was developed using
+financial KPIs, trend analysis, forecasting techniques
+and executive-level data visualisations to communicate
+business performance.
+</p>
 
-    </div>
+</div>
 
-</section>
+<div class="section">
 
-<section class="section">
+<h2>Dashboard Preview</h2>
 
-    <h3>Project Overview</h3>
+<img
+class="dashboard-image"
+src="rollsroyce-dashboard.png"
+alt="Rolls-Royce Dashboard Screenshot">
 
-    <div class="cards">
+<br><br>
 
-        <div class="card">
-            <h4>Objective</h4>
+<a href="rollsroyce-dashboard.xlsx"
+class="download-btn">
 
-            <p>
-                To evaluate Rolls-Royce's financial performance using annual
-                report data and identify key trends in growth,
-                profitability and operational efficiency.
-            </p>
+📊 Download Excel Workbook
 
-        </div>
+</a>
 
-        <div class="card">
-            <h4>Tools Used</h4>
+</div>
 
-            <p>
-                Microsoft Excel, Pivot Tables, Power Query,
-                Financial Modelling, Forecasting Techniques,
-                Dashboard Design and KPI Analysis.
-            </p>
+<div class="section">
 
-        </div>
+<h2>Business Questions</h2>
 
-        <div class="card">
-            <h4>Skills Demonstrated</h4>
+<ul>
 
-            <p>
-                Financial Analysis, Business Intelligence,
-                Forecasting, Data Visualisation,
-                Ratio Analysis and Executive Reporting.
-            </p>
+<li>How has Rolls-Royce's revenue changed since 2020?</li>
 
-        </div>
+<li>How successfully has the company recovered from COVID-19?</li>
 
-    </div>
+<li>Has profitability improved over time?</li>
 
-</section>
+<li>How efficiently is capital being utilised?</li>
 
-<section class="section">
+<li>What do forecast models suggest about future performance?</li>
 
-    <h3>Key Insights</h3>
+</ul>
 
-    <div class="cards">
+</div>
 
-        <div class="card">
-            <h4>Strong Recovery</h4>
+<div class="section">
 
-            <p>
-                Following severe disruption caused by Covid-19,
-                Rolls-Royce experienced substantial revenue growth,
-                driven by increased civil aerospace flying hours and
-                improved demand across its key business segments.
-            </p>
+<h2>Key Dashboard Metrics</h2>
 
-        </div>
+<div class="kpi-grid">
 
-        <div class="card">
-            <h4>Improving Profitability</h4>
+<div class="kpi-card">
+<h3>£18.9bn</h3>
+<p>Revenue</p>
+</div>
 
-            <p>
-                Operating performance improved significantly due to
-                transformation initiatives, cost-control programmes
-                and a greater focus on high-margin activity.
-            </p>
+<div class="kpi-card">
+<h3>£2.5bn</h3>
+<p>Operating Profit</p>
+</div>
 
-        </div>
+<div class="kpi-card">
+<h3>29%</h3>
+<p>ROCE</p>
+</div>
 
-        <div class="card">
-            <h4>Excellent Cash Generation</h4>
+<div class="kpi-card">
+<h3>125%</h3>
+<p>Cash Conversion</p>
+</div>
 
-            <p>
-                Cash conversion improved year-on-year, strengthening
-                liquidity and providing greater flexibility for future
-                investment and shareholder returns.
-            </p>
+</div>
 
-        </div>
+</div>
 
-    </div>
+<div class="section">
 
-</section>
+<h2>Analysis Performed</h2>
 
-<section class="section">
+<ul>
 
-    <h3>Forecast Analysis</h3>
+<li>Revenue trend analysis (2020–2025)</li>
 
-    <div class="insight-box">
+<li>Profitability and operating margin evaluation</li>
 
-        <p>
-            Revenue forecasting was performed using historical growth
-            trends from 2020-2025. Based on current performance,
-            Rolls-Royce is expected to continue generating revenue growth,
-            supported by increasing engine flying hours, defence contracts
-            and ongoing operational improvements.
-        </p>
+<li>Return on Capital Employed (ROCE) analysis</li>
 
-    </div>
+<li>Cash conversion assessment</li>
 
-</section>
+<li>Financial forecasting and growth modelling</li>
 
-<section class="section" style="text-align:center;">
+<li>Dashboard development using Excel and PivotTables</li>
 
-    <h3>Project Deliverables</h3>
+</ul>
 
-    <p>
-        Download the Excel dashboard workbook and supporting analysis files.
-    </p>
+</div>
 
-    <a href="#" class="btn">View Dashboard Workbook</a>
+<div class="section">
 
-</section>
+<h2>Key Findings</h2>
 
-<footer>
+<div class="finding">
 
-    <p>
-        © 2026 Rayyaan Akhtar | Accounting, Finance & Data Analytics Portfolio
-    </p>
+<h3>Strong Post-Pandemic Recovery</h3>
 
-</footer>
+<p>
+Following the severe downturn experienced during
+the pandemic, revenue growth accelerated as global
+air travel recovered and engine flying hours increased.
+</p>
 
-</body>
-</html>
+</div>
+
+<div class="finding">
+
+<h3>Profitability Improved Significantly</h3>
+
+<p>
+Operating profit increased substantially due to
+cost reductions, pricing improvements and
+transformation initiatives across the business.
+</p>
+
+</div>
+
+<div class="finding">
+
+<h3>ROCE Increased Year-on-Year</h3>
+
+<p>
+The company generated stronger returns from its
+capital base, indicating improved operational
+efficiency and resource utilisation.
+</p>
+
+</div>
+
+<div class="finding">
+
+<h3>Cash Generation Strengthened</h3>
+
+<p>
+Cash conversion exceeded historical levels,
+providing greater financial flexibility and
+supporting future investment opportunities.
+</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Business Recommendations</h2>
+
+<div class="recommendation">
+
+<h3>Management Action Plan</h3>
+
+<p>
+
+The analysis suggests that Rolls-Royce should continue
+to focus on operational efficiency improvements while
+leveraging growth in the Civil Aerospace division.
+Management should maintain strong cash conversion and
+capital discipline while investing in future technologies,
+including sustainable aviation and advanced propulsion
+systems. Maintaining profitability and cash generation
+will be critical for sustaining long-term shareholder value.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Skills Demonstrated</h2>
+
+<span class="skill">Excel</span>
+<span class="skill">Financial Analysis</span>
+<span class="skill">Ratio Analysis</span>
+<span class="skill">Forecasting</span>
+<span class="skill">Financial Modelling</span>
+<span class="skill">Data Visualisation</span>
+<span class="skill">Dashboard Design</span>
+<span class="skill">Business Reporting</span>
+
+</div>
+
+<div class="section">
+
+<h2>Project Reflection</h2>
+
+<p>
+
+This project strengthened my understanding of financial
+statement analysis and corporate performance evaluation.
+It improved my ability to derive meaningful business
+insights from annual report data and communicate findings
+through dashboard-based reporting. The project also
+enhanced my forecasting and financial modelling skills,
+which are directly relevant to careers in corporate
+banking, investment banking and financial analysis.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<p>
+Rayyaan Akhtar | Finance Portfolio
+</p>
+
+<p>
+Accounting • Finance • Corporate Banking
+</p>
+
+</div>

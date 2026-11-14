@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sales Analysis Dashboard Project</title>
+
+<title>Sales Analysis Dashboard | Rayyaan Akhtar</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -19,10 +21,8 @@ body{
     line-height:1.8;
 }
 
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
+a{
+    text-decoration:none;
 }
 
 .hero{
@@ -33,13 +33,14 @@ body{
         #0f172a,
         #1e3a8a
     );
-    text-align:center;
+
     padding:80px 20px;
+    text-align:center;
 }
 
 .hero h1{
     font-size:3rem;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 .hero p{
@@ -47,12 +48,33 @@ body{
     font-size:1.1rem;
 }
 
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.back-btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#3b82f6;
+}
+
 .section{
     background:#1e293b;
     border-radius:15px;
     padding:30px;
     margin-bottom:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    box-shadow:0 6px 25px rgba(0,0,0,.25);
 }
 
 .section h2{
@@ -66,7 +88,7 @@ body{
 }
 
 ul{
-    padding-left:20px;
+    padding-left:25px;
 }
 
 .dashboard-image{
@@ -75,82 +97,132 @@ ul{
     border:2px solid #334155;
 }
 
-.back-btn{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    padding:12px 20px;
-    border-radius:8px;
-    text-decoration:none;
-    margin-bottom:30px;
-    transition:.3s;
+.kpi-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
 }
 
-.back-btn:hover{
-    background:#3b82f6;
+.kpi-card{
+    background:#172554;
+    text-align:center;
+    border-radius:12px;
+    padding:25px;
 }
 
-.tag{
-    display:inline-block;
-    background:#2563eb;
-    padding:8px 15px;
-    border-radius:20px;
-    margin:5px;
-    font-size:14px;
+.kpi-card h3{
+    color:#60a5fa;
+    font-size:2rem;
+}
+
+.kpi-card p{
+    color:#cbd5e1;
 }
 
 .finding{
     border-left:4px solid #60a5fa;
     padding-left:15px;
-    margin-bottom:15px;
+    margin-bottom:20px;
+}
+
+.finding h3{
+    margin-bottom:8px;
 }
 
 .recommendation{
     background:#172554;
-    border-radius:10px;
-    padding:20px;
-    margin-top:10px;
+    border-radius:12px;
+    padding:25px;
+    border:1px solid #2563eb;
+}
+
+.recommendation h3{
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+.skill{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    margin:5px;
+    border-radius:25px;
+}
+
+.download-btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.download-btn:hover{
+    background:#3b82f6;
 }
 
 .footer{
     text-align:center;
+    padding:50px;
     color:#94a3b8;
-    padding:30px;
 }
+
 </style>
 </head>
 
 <body>
 
-<a href="index.html" class="back-link">← Back to Portfolio</a>
+<div class="hero">
 
 <h1>Sales Analysis Dashboard</h1>
 
 <p>
-Interactive business intelligence dashboard created using
-Microsoft Excel to analyse sales and profitability across
-multiple regions, customer segments and product categories.
+Microsoft Excel | Business Intelligence | Data Analysis
 </p>
+
+</div>
+
+<div class="container">
+
+<a href="index.html" class="back-btn">
+← Back to Portfolio
+</a>
 
 <div class="section">
 
 <h2>Project Overview</h2>
 
 <p>
-The objective of this project was to analyse retail sales data
-and identify trends affecting company profitability.
-Using Excel PivotTables, PivotCharts and KPI reporting tools,
-an interactive dashboard was developed to support management
-decision making.
+This project involved analysing a retail sales dataset
+containing approximately 10,000 transactions to identify
+trends in sales performance, profitability and customer
+behaviour. An interactive dashboard was developed in
+Microsoft Excel using PivotTables, PivotCharts, KPI cards
+and slicers to support business decision-making.
 </p>
 
 </div>
 
 <div class="section">
 
-<h2>Dashboard Screenshot</h2>
+<h2>Dashboard Preview</h2>
 
-<img src="sales-dashboard.png" alt="Sales Dashboard">
+<img
+class="dashboard-image"
+src="sales-dashboard.png"
+alt="Sales Dashboard Screenshot">
+
+<br>
+
+<a href="sales-dashboard.xlsx"
+class="download-btn">
+
+📊 Download Excel Workbook
+
+</a>
 
 </div>
 
@@ -159,12 +231,46 @@ decision making.
 <h2>Business Questions</h2>
 
 <ul>
-<li>Which regions generate the highest sales revenue?</li>
-<li>Which product categories are most profitable?</li>
-<li>How does discounting affect profit?</li>
-<li>Which customer segments contribute most revenue?</li>
-<li>Where should management focus future growth efforts?</li>
+<li>Which regions generated the strongest sales performance?</li>
+<li>Which product categories contributed most profit?</li>
+<li>How did discounting affect profitability?</li>
+<li>What customer segments generated the highest revenue?</li>
+<li>Which products should management prioritise?</li>
 </ul>
+
+</div>
+
+<div class="section">
+
+<h2>Key Dashboard Metrics</h2>
+
+<div class="kpi-grid">
+
+<div class="kpi-card">
+<h3>£XXXk</h3>
+<p>Total Sales</p>
+</div>
+
+<div class="kpi-card">
+<h3>£XXXk</h3>
+<p>Total Profit</p>
+</div>
+
+<div class="kpi-card">
+<h3>XX%</h3>
+<p>Profit Margin</p>
+</div>
+
+<div class="kpi-card">
+<h3>XX,XXX</h3>
+<p>Units Sold</p>
+</div>
+
+</div>
+
+<p style="margin-top:20px;color:#94a3b8;">
+Replace these figures with the actual KPI values from your dashboard.
+</p>
 
 </div>
 
@@ -173,12 +279,19 @@ decision making.
 <h2>Analysis Performed</h2>
 
 <ul>
-<li>Revenue analysis by region</li>
-<li>Profit analysis by category and sub-category</li>
-<li>Customer segment performance analysis</li>
+
+<li>Regional sales and profitability analysis</li>
+
+<li>Product category and sub-category performance evaluation</li>
+
+<li>Customer segment comparison</li>
+
 <li>Discount impact assessment</li>
-<li>KPI reporting through interactive dashboards</li>
-<li>Trend identification using PivotTables and PivotCharts</li>
+
+<li>KPI dashboard development</li>
+
+<li>Interactive reporting using slicers and PivotTables</li>
+
 </ul>
 
 </div>
@@ -187,13 +300,52 @@ decision making.
 
 <h2>Key Findings</h2>
 
-<ul>
-<li>Technology products generated the strongest profit contribution.</li>
-<li>Several sub-categories produced low or negative profits despite strong sales performance.</li>
-<li>Profitability varied significantly across regions.</li>
-<li>Higher discount levels were associated with weaker profit margins.</li>
-<li>A small number of categories accounted for a large proportion of overall profit.</li>
-</ul>
+<div class="finding">
+
+<h3>Technology Products Were Most Profitable</h3>
+
+<p>
+Technology products produced the strongest profit contribution
+and represented a major driver of overall business performance.
+</p>
+
+</div>
+
+<div class="finding">
+
+<h3>Heavy Discounting Reduced Profitability</h3>
+
+<p>
+Higher discount levels were often associated with weaker
+profit margins, suggesting that excessive discounting had
+a negative impact on earnings.
+</p>
+
+</div>
+
+<div class="finding">
+
+<h3>Regional Performance Varied Significantly</h3>
+
+<p>
+Some regions generated substantially stronger sales and profit
+results than others, creating opportunities to replicate
+successful strategies across the business.
+</p>
+
+</div>
+
+<div class="finding">
+
+<h3>Profitability Was Concentrated</h3>
+
+<p>
+A small number of product groups generated a large proportion
+of total profits, highlighting areas where management should
+focus future investment.
+</p>
+
+</div>
 
 </div>
 
@@ -201,13 +353,23 @@ decision making.
 
 <h2>Business Recommendations</h2>
 
+<div class="recommendation">
+
+<h3>Management Action Plan</h3>
+
 <p>
-Management should review discount policies for low-margin
-products and prioritise investment in higher-performing
-categories. Regional performance differences suggest that
-successful strategies from high-profit regions could be
-replicated elsewhere to improve overall profitability.
+
+The analysis indicates that management should prioritise
+high-margin products while reviewing discount policies on
+underperforming items. Further investigation into the
+strategies used by top-performing regions could help improve
+profitability across the wider business. By focusing on
+profitable product categories and optimising discount levels,
+overall financial performance could be enhanced.
+
 </p>
+
+</div>
 
 </div>
 
@@ -215,29 +377,46 @@ replicated elsewhere to improve overall profitability.
 
 <h2>Skills Demonstrated</h2>
 
-<ul>
-<li>Microsoft Excel</li>
-<li>PivotTables</li>
-<li>PivotCharts</li>
-<li>Data Visualisation</li>
-<li>Business Analysis</li>
-<li>KPI Reporting</li>
-<li>Commercial Awareness</li>
-<li>Problem Solving</li>
-</ul>
+<span class="skill">Excel</span>
+<span class="skill">PivotTables</span>
+<span class="skill">PivotCharts</span>
+<span class="skill">Dashboard Design</span>
+<span class="skill">Business Analysis</span>
+<span class="skill">KPI Reporting</span>
+<span class="skill">Data Visualisation</span>
+<span class="skill">Commercial Awareness</span>
 
 </div>
-    <h2>Downloads</h2>
 
-<ul>
-    <li>
-        <a href="Sample Superstore.xlsx">
-        Download Excel Workbook
-        </a>
-    </li>
+<div class="section">
 
-   
-</ul>
+<h2>Project Reflection</h2>
+
+<p>
+
+This project strengthened my ability to work with large
+datasets, build interactive dashboards and communicate
+business insights through data. It also improved my
+understanding of how organisations use management
+information to support strategic decision-making.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<p>
+Rayyaan Akhtar | Finance Portfolio
+</p>
+
+<p>
+Accounting • Finance • Corporate Banking
+</p>
+
+</div>
 
 </body>
 </html>

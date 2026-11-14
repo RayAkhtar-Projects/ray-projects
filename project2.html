@@ -1,3 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rolls-Royce Financial Performance Dashboard | Rayyaan Akhtar</title>
+
+<style>
+
+:root{
+    --background:#1f1f27;
+    --card:#2b2b36;
+
+    --primary:#8b5cf6;
+    --secondary:#6f42c1;
+
+    --accent:#a78bfa;
+
+    --text:#f3f4f6;
+    --muted:#cbd5e1;
+
+    --border:#3f3f46;
+
+    --highlight:#312e81;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+a{
+    text-decoration:none;
+}
+
+.hero{
+    background:
+    linear-gradient(
+        135deg,
+        #23232d,
+        #4b2e83,
+        #6f42c1
+    );
+
+    color:white;
+
+    padding:90px 20px;
+
+    text-align:center;
+
+    border-bottom:1px solid var(--border);
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#ddd6fe;
+    font-size:1.1rem;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.back-btn{
+
+    display:inline-block;
+
+    background:var(--secondary);
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    margin-bottom:30px;
+
+    transition:.3s;
+}
+
+.back-btn:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-2px);
+}
+
+.section{
+
+    background:var(--card);
+
+    border-radius:15px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    border:1px solid var(--border);
+
+    box-shadow:
+    0 6px 15px rgba(0,0,0,.25);
+}
+
+.section h2{
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.section p,
+.section li{
+    color:var(--muted);
+}
+
+ul{
+    padding-left:25px;
+}
+
+.dashboard-image{
+
+    width:100%;
+
+    border-radius:15px;
+
+    border:2px solid var(--border);
+}
+
+.kpi-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+}
+
+.kpi-card{
+
+    background:#23232d;
+
+    border-left:
+    6px solid var(--accent);
+
+    text-align:center;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.35);
+}
+
+.kpi-card h3{
+
+    color:var(--primary);
+
+    font-size:2rem;
+}
+
+.kpi-card p{
+    color:var(--muted);
+}
+
+.finding{
+
+    border-left:
+    5px solid var(--primary);
+
+    padding-left:15px;
+
+    margin-bottom:20px;
+}
+
+.finding h3{
+
+    color:var(--primary);
+
+    margin-bottom:8px;
+}
+
+.recommendation{
+
+    background:var(--highlight);
+
+    border-left:
+    5px solid var(--accent);
+
+    border-radius:12px;
+
+    padding:25px;
+}
+
+.recommendation h3{
+
+    color:#ddd6fe;
+
+    margin-bottom:15px;
+}
+
+.recommendation p{
+    color:#e5e7eb;
+}
+
+.skill{
+
+    display:inline-block;
+
+    background:#4338ca;
+
+    color:white;
+
+    padding:10px 18px;
+
+    margin:5px;
+
+    border-radius:25px;
+
+    font-weight:bold;
+}
+
+.download-btn{
+
+    display:inline-block;
+
+    background:var(--secondary);
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.download-btn:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-2px);
+}
+
+.footer{
+
+    text-align:center;
+
+    padding:50px;
+
+    color:#9ca3af;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
 <div class="hero">
 
 <h1>Rolls-Royce Financial Performance Dashboard</h1>
@@ -20,15 +306,13 @@ Microsoft Excel | Financial Analysis | Forecasting
 
 <p>
 This project analysed Rolls-Royce Holdings plc using
-financial information extracted from annual reports
-between 2020 and 2025. The objective was to evaluate
-the company's post-pandemic recovery, profitability,
-operational efficiency and future growth prospects.
-
-An interactive Excel dashboard was developed using
-financial KPIs, trend analysis, forecasting techniques
-and executive-level data visualisations to communicate
-business performance.
+financial data extracted from annual reports covering
+2020 to 2025. The objective was to evaluate the company's
+revenue growth, profitability, operational efficiency and
+overall financial recovery following the COVID-19 pandemic.
+An interactive Excel dashboard was developed to communicate
+key performance indicators, historical trends and future
+forecasts to support strategic decision-making.
 </p>
 
 </div>
@@ -59,15 +343,17 @@ class="download-btn">
 
 <ul>
 
-<li>How has Rolls-Royce's revenue changed since 2020?</li>
+<li>How has Rolls-Royce's revenue changed from 2020 to 2025?</li>
 
-<li>How successfully has the company recovered from COVID-19?</li>
+<li>How effectively has the company recovered since the pandemic?</li>
 
-<li>Has profitability improved over time?</li>
+<li>What trends can be observed in profitability and operating performance?</li>
 
 <li>How efficiently is capital being utilised?</li>
 
-<li>What do forecast models suggest about future performance?</li>
+<li>What do revenue forecasts suggest about future growth?</li>
+
+<li>How has cash generation improved over time?</li>
 
 </ul>
 
@@ -109,17 +395,19 @@ class="download-btn">
 
 <ul>
 
-<li>Revenue trend analysis (2020–2025)</li>
+<li>Revenue trend analysis (2020-2025)</li>
 
-<li>Profitability and operating margin evaluation</li>
+<li>Operating profit and margin analysis</li>
 
-<li>Return on Capital Employed (ROCE) analysis</li>
+<li>Return on Capital Employed (ROCE) evaluation</li>
 
-<li>Cash conversion assessment</li>
+<li>Cash conversion analysis</li>
 
 <li>Financial forecasting and growth modelling</li>
 
-<li>Dashboard development using Excel and PivotTables</li>
+<li>Annual report data extraction and cleaning</li>
+
+<li>Dashboard development using Excel, PivotTables and KPI reporting</li>
 
 </ul>
 
@@ -134,45 +422,46 @@ class="download-btn">
 <h3>Strong Post-Pandemic Recovery</h3>
 
 <p>
-Following the severe downturn experienced during
-the pandemic, revenue growth accelerated as global
-air travel recovered and engine flying hours increased.
+Revenue growth accelerated significantly after 2021,
+supported by the recovery of global air travel and
+higher engine flying hours within the Civil Aerospace
+division.
 </p>
 
 </div>
 
 <div class="finding">
 
-<h3>Profitability Improved Significantly</h3>
+<h3>Profitability Increased Significantly</h3>
 
 <p>
-Operating profit increased substantially due to
-cost reductions, pricing improvements and
-transformation initiatives across the business.
+Operational improvements, cost reductions and pricing
+initiatives contributed to a substantial increase in
+profitability across the business.
 </p>
 
 </div>
 
 <div class="finding">
 
-<h3>ROCE Increased Year-on-Year</h3>
+<h3>ROCE Improved Year-on-Year</h3>
 
 <p>
-The company generated stronger returns from its
-capital base, indicating improved operational
-efficiency and resource utilisation.
+Returns generated from invested capital strengthened
+considerably, indicating improved efficiency and
+stronger operational performance.
 </p>
 
 </div>
 
 <div class="finding">
 
-<h3>Cash Generation Strengthened</h3>
+<h3>Cash Generation Became a Key Strength</h3>
 
 <p>
-Cash conversion exceeded historical levels,
-providing greater financial flexibility and
-supporting future investment opportunities.
+Cash conversion improved substantially throughout the
+period, supporting liquidity, debt reduction and future
+investment opportunities.
 </p>
 
 </div>
@@ -189,14 +478,14 @@ supporting future investment opportunities.
 
 <p>
 
-The analysis suggests that Rolls-Royce should continue
-to focus on operational efficiency improvements while
-leveraging growth in the Civil Aerospace division.
-Management should maintain strong cash conversion and
-capital discipline while investing in future technologies,
-including sustainable aviation and advanced propulsion
-systems. Maintaining profitability and cash generation
-will be critical for sustaining long-term shareholder value.
+The analysis suggests Rolls-Royce should continue its
+focus on operational efficiency, margin improvement and
+strong cash generation. Management should maintain
+investment in high-growth aerospace and defence markets
+while preserving capital discipline. Continued focus on
+cost control and technological innovation should support
+long-term shareholder value creation and sustainable
+growth.
 
 </p>
 
@@ -210,12 +499,12 @@ will be critical for sustaining long-term shareholder value.
 
 <span class="skill">Excel</span>
 <span class="skill">Financial Analysis</span>
-<span class="skill">Ratio Analysis</span>
-<span class="skill">Forecasting</span>
 <span class="skill">Financial Modelling</span>
-<span class="skill">Data Visualisation</span>
+<span class="skill">Forecasting</span>
+<span class="skill">Ratio Analysis</span>
 <span class="skill">Dashboard Design</span>
 <span class="skill">Business Reporting</span>
+<span class="skill">Data Visualisation</span>
 
 </div>
 
@@ -226,13 +515,13 @@ will be critical for sustaining long-term shareholder value.
 <p>
 
 This project strengthened my understanding of financial
-statement analysis and corporate performance evaluation.
-It improved my ability to derive meaningful business
-insights from annual report data and communicate findings
-through dashboard-based reporting. The project also
-enhanced my forecasting and financial modelling skills,
-which are directly relevant to careers in corporate
-banking, investment banking and financial analysis.
+statement analysis, forecasting and corporate performance
+evaluation. Through building the dashboard, I improved my
+ability to extract insights from annual report data and
+communicate findings through concise visual reporting.
+The project also enhanced my commercial awareness and
+demonstrated how financial information can be used to
+support strategic business decisions.
 
 </p>
 
@@ -251,3 +540,6 @@ Accounting • Finance • Corporate Banking
 </p>
 
 </div>
+
+</body>
+</html>

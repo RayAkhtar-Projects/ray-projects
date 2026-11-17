@@ -11,17 +11,12 @@
 :root{
     --background:#1f1f27;
     --card:#2b2b36;
-
     --primary:#8b5cf6;
     --secondary:#6f42c1;
-
     --accent:#a78bfa;
-
     --text:#f3f4f6;
     --muted:#cbd5e1;
-
     --border:#3f3f46;
-
     --highlight:#312e81;
 }
 
@@ -50,13 +45,9 @@ a{
         #4b2e83,
         #6f42c1
     );
-
     color:white;
-
     padding:90px 20px;
-
     text-align:center;
-
     border-bottom:1px solid var(--border);
 }
 
@@ -77,43 +68,27 @@ a{
 }
 
 .back-btn{
-
     display:inline-block;
-
     background:var(--secondary);
-
     color:white;
-
     padding:12px 20px;
-
     border-radius:8px;
-
     font-weight:bold;
-
     margin-bottom:30px;
-
     transition:.3s;
 }
 
 .back-btn:hover{
-
     background:var(--primary);
-
     transform:translateY(-2px);
 }
 
 .section{
-
     background:var(--card);
-
     border-radius:15px;
-
     padding:30px;
-
     margin-bottom:25px;
-
     border:1px solid var(--border);
-
     box-shadow:
     0 6px 15px rgba(0,0,0,.25);
 }
@@ -133,45 +108,31 @@ ul{
 }
 
 .dashboard-image{
-
     width:100%;
-
     border-radius:15px;
-
     border:2px solid var(--border);
 }
 
 .kpi-grid{
-
     display:grid;
-
     grid-template-columns:
     repeat(auto-fit,minmax(180px,1fr));
-
     gap:20px;
 }
 
 .kpi-card{
-
     background:#23232d;
-
     border-left:
     6px solid var(--accent);
-
     text-align:center;
-
     border-radius:12px;
-
     padding:25px;
-
     box-shadow:
     0 5px 15px rgba(0,0,0,.35);
 }
 
 .kpi-card h3{
-
     color:var(--primary);
-
     font-size:2rem;
 }
 
@@ -180,38 +141,27 @@ ul{
 }
 
 .finding{
-
     border-left:
     5px solid var(--primary);
-
     padding-left:15px;
-
     margin-bottom:20px;
 }
 
 .finding h3{
-
     color:var(--primary);
-
     margin-bottom:8px;
 }
 
 .recommendation{
-
     background:var(--highlight);
-
     border-left:
     5px solid var(--accent);
-
     border-radius:12px;
-
     padding:25px;
 }
 
 .recommendation h3{
-
     color:#ddd6fe;
-
     margin-bottom:15px;
 }
 
@@ -220,54 +170,34 @@ ul{
 }
 
 .skill{
-
     display:inline-block;
-
     background:#4338ca;
-
     color:white;
-
     padding:10px 18px;
-
     margin:5px;
-
     border-radius:25px;
-
     font-weight:bold;
 }
 
 .download-btn{
-
     display:inline-block;
-
     background:var(--secondary);
-
     color:white;
-
     padding:12px 20px;
-
     border-radius:8px;
-
     margin-top:15px;
-
     font-weight:bold;
-
     transition:.3s;
 }
 
 .download-btn:hover{
-
     background:var(--primary);
-
     transform:translateY(-2px);
 }
 
 .footer{
-
     text-align:center;
-
     padding:50px;
-
     color:#9ca3af;
 }
 
@@ -327,9 +257,7 @@ alt="Sales Dashboard Screenshot">
 
 <a href="sales-dashboard.xlsx"
 class="download-btn">
-
 📊 Download Excel Workbook
-
 </a>
 
 </div>
@@ -370,14 +298,11 @@ class="download-btn">
 </div>
 
 <div class="kpi-card">
-<h3>37,383</h3>
+<h3>37,873</h3>
 <p>Units Sold</p>
 </div>
 
 </div>
-
-<p style="margin-top:20px;color:#94a3b8;">
-</p>
 
 </div>
 
@@ -386,19 +311,12 @@ class="download-btn">
 <h2>Analysis Performed</h2>
 
 <ul>
-
 <li>Regional sales and profitability analysis</li>
-
 <li>Product category and sub-category performance evaluation</li>
-
 <li>Customer segment comparison</li>
-
 <li>Discount impact assessment</li>
-
 <li>KPI dashboard development</li>
-
 <li>Interactive reporting using slicers and PivotTables</li>
-
 </ul>
 
 </div>
@@ -408,50 +326,40 @@ class="download-btn">
 <h2>Key Findings</h2>
 
 <div class="finding">
-
-<h3>Technology Products Were Most Profitable</h3>
-
+<h3>Discounts Above 20% Wiped Out Profit</h3>
 <p>
-Technology products produced the strongest profit contribution
-and represented a major driver of overall business performance.
+Orders with no discount earned a 29.5% margin and orders discounted up to 20%
+earned 11.9%. Orders discounted by more than 20% made a combined loss of
+$135.4k (a -37.3% margin) on $362.8k of sales, cancelling out almost half
+of the business's total profit.
 </p>
-
 </div>
 
 <div class="finding">
-
-<h3>Heavy Discounting Reduced Profitability</h3>
-
+<h3>Furniture Barely Broke Even</h3>
 <p>
-Higher discount levels were often associated with weaker
-profit margins, suggesting that excessive discounting had
-a negative impact on earnings.
+Technology ($145.5k profit, 17.4% margin) and Office Supplies ($122.5k, 17.0%)
+drove almost all profit. Furniture generated $742.0k of sales but only
+$18.5k of profit (2.5% margin), dragged down by Tables (-$17.7k) and
+Bookcases (-$3.5k).
 </p>
-
 </div>
 
 <div class="finding">
-
-<h3>Regional Performance Varied Significantly</h3>
-
+<h3>The Central Region Underperformed</h3>
 <p>
-Some regions generated substantially stronger sales and profit
-results than others, creating opportunities to replicate
-successful strategies across the business.
+The West led on both sales ($725.5k) and margin (14.9%), while Central
+achieved only a 7.9% margin on $501.2k of sales, about half the West's margin.
 </p>
-
 </div>
 
 <div class="finding">
-
-<h3>Profitability Was Concentrated</h3>
-
+<h3>Profit Was Highly Concentrated</h3>
 <p>
-A small number of product groups generated a large proportion
-of total profits, highlighting areas where management should
-focus future investment.
+Just three of seventeen sub-categories (Copiers, Phones and Accessories)
+generated 49.6% of total profit. Consumer customers accounted for 50.6%
+of sales.
 </p>
-
 </div>
 
 </div>
@@ -464,17 +372,12 @@ focus future investment.
 
 <h3>Management Action Plan</h3>
 
-<p>
-
-The analysis indicates that management should prioritise
-high-margin products while reviewing discount policies on
-underperforming items. Further investigation into the
-strategies used by top-performing regions could help improve
-profitability across the wider business. By focusing on
-profitable product categories and optimising discount levels,
-overall financial performance could be enhanced.
-
-</p>
+<ul>
+<li>Cap standard discounts at 20%, and require approval above that level, since deeper discounts were loss-making on average.</li>
+<li>Review pricing and discounting on Tables and Bookcases, or reduce focus on them, to lift the 2.5% Furniture margin.</li>
+<li>Investigate why the Central region's margin is half the West's, starting with its discount mix.</li>
+<li>Protect and grow the high-margin Copiers, Phones and Accessories lines.</li>
+</ul>
 
 </div>
 
@@ -500,13 +403,11 @@ overall financial performance could be enhanced.
 <h2>Project Reflection</h2>
 
 <p>
-
 This project strengthened my ability to work with large
 datasets, build interactive dashboards and communicate
 business insights through data. It also improved my
 understanding of how organisations use management
 information to support strategic decision-making.
-
 </p>
 
 </div>

@@ -11,17 +11,12 @@
 :root{
     --background:#1f1f27;
     --card:#2b2b36;
-
     --primary:#8b5cf6;
     --secondary:#6f42c1;
-
     --accent:#a78bfa;
-
     --text:#f3f4f6;
     --muted:#cbd5e1;
-
     --border:#3f3f46;
-
     --highlight:#312e81;
 }
 
@@ -50,13 +45,9 @@ a{
         #4b2e83,
         #6f42c1
     );
-
     color:white;
-
     padding:90px 20px;
-
     text-align:center;
-
     border-bottom:1px solid var(--border);
 }
 
@@ -77,43 +68,27 @@ a{
 }
 
 .back-btn{
-
     display:inline-block;
-
     background:var(--secondary);
-
     color:white;
-
     padding:12px 20px;
-
     border-radius:8px;
-
     font-weight:bold;
-
     margin-bottom:30px;
-
     transition:.3s;
 }
 
 .back-btn:hover{
-
     background:var(--primary);
-
     transform:translateY(-2px);
 }
 
 .section{
-
     background:var(--card);
-
     border-radius:15px;
-
     padding:30px;
-
     margin-bottom:25px;
-
     border:1px solid var(--border);
-
     box-shadow:
     0 6px 15px rgba(0,0,0,.25);
 }
@@ -133,45 +108,31 @@ ul{
 }
 
 .dashboard-image{
-
     width:100%;
-
     border-radius:15px;
-
     border:2px solid var(--border);
 }
 
 .kpi-grid{
-
     display:grid;
-
     grid-template-columns:
     repeat(auto-fit,minmax(180px,1fr));
-
     gap:20px;
 }
 
 .kpi-card{
-
     background:#23232d;
-
     border-left:
     6px solid var(--accent);
-
     text-align:center;
-
     border-radius:12px;
-
     padding:25px;
-
     box-shadow:
     0 5px 15px rgba(0,0,0,.35);
 }
 
 .kpi-card h3{
-
     color:var(--primary);
-
     font-size:2rem;
 }
 
@@ -180,38 +141,27 @@ ul{
 }
 
 .finding{
-
     border-left:
     5px solid var(--primary);
-
     padding-left:15px;
-
     margin-bottom:20px;
 }
 
 .finding h3{
-
     color:var(--primary);
-
     margin-bottom:8px;
 }
 
 .recommendation{
-
     background:var(--highlight);
-
     border-left:
     5px solid var(--accent);
-
     border-radius:12px;
-
     padding:25px;
 }
 
 .recommendation h3{
-
     color:#ddd6fe;
-
     margin-bottom:15px;
 }
 
@@ -220,54 +170,34 @@ ul{
 }
 
 .skill{
-
     display:inline-block;
-
     background:#4338ca;
-
     color:white;
-
     padding:10px 18px;
-
     margin:5px;
-
     border-radius:25px;
-
     font-weight:bold;
 }
 
 .download-btn{
-
     display:inline-block;
-
     background:var(--secondary);
-
     color:white;
-
     padding:12px 20px;
-
     border-radius:8px;
-
     margin-top:15px;
-
     font-weight:bold;
-
     transition:.3s;
 }
 
 .download-btn:hover{
-
     background:var(--primary);
-
     transform:translateY(-2px);
 }
 
 .footer{
-
     text-align:center;
-
     padding:50px;
-
     color:#9ca3af;
 }
 
@@ -306,8 +236,9 @@ Microsoft Excel | Financial Analysis | Forecasting
 
 <p>
 This project analysed Rolls-Royce Holdings plc using
-financial data extracted from annual reports covering
-2020 to 2025. The objective was to evaluate the company's
+underlying financial data from its annual reports
+and results announcements covering 2020 to 2025 (latest: FY2025
+results, published 26 February 2026). The objective was to evaluate the company's
 revenue growth, profitability, operational efficiency and
 overall financial recovery following the COVID-19 pandemic.
 An interactive Excel dashboard was developed to communicate
@@ -330,9 +261,7 @@ alt="Rolls-Royce Dashboard Screenshot">
 
 <a href="rollsroyce-dashboard.xlsx"
 class="download-btn">
-
 📊 Download Excel Workbook
-
 </a>
 
 </div>
@@ -342,19 +271,12 @@ class="download-btn">
 <h2>Business Questions</h2>
 
 <ul>
-
 <li>How has Rolls-Royce's revenue changed from 2020 to 2025?</li>
-
 <li>How effectively has the company recovered since the pandemic?</li>
-
 <li>What trends can be observed in profitability and operating performance?</li>
-
 <li>How efficiently is capital being utilised?</li>
-
 <li>What do revenue forecasts suggest about future growth?</li>
-
 <li>How has cash generation improved over time?</li>
-
 </ul>
 
 </div>
@@ -366,26 +288,30 @@ class="download-btn">
 <div class="kpi-grid">
 
 <div class="kpi-card">
-<h3>£18.9bn</h3>
-<p>Revenue</p>
+<h3>£20.1bn</h3>
+<p>Revenue (FY2025)</p>
 </div>
 
 <div class="kpi-card">
-<h3>£2.5bn</h3>
-<p>Operating Profit</p>
+<h3>£3.46bn</h3>
+<p>Operating Profit (FY2025)</p>
 </div>
 
 <div class="kpi-card">
-<h3>29%</h3>
-<p>ROCE</p>
+<h3>18.9%</h3>
+<p>Return on Capital (FY2025)</p>
 </div>
 
 <div class="kpi-card">
-<h3>125%</h3>
-<p>Cash Conversion</p>
+<h3>94%</h3>
+<p>Cash Conversion (FCF / Op. Profit)</p>
 </div>
 
 </div>
+
+<p style="margin-top:20px;color:#94a3b8;">
+All figures are Rolls-Royce's underlying measures for FY2025 (£m, year to 31 December).
+</p>
 
 </div>
 
@@ -394,21 +320,13 @@ class="download-btn">
 <h2>Analysis Performed</h2>
 
 <ul>
-
 <li>Revenue trend analysis (2020-2025)</li>
-
 <li>Operating profit and margin analysis</li>
-
-<li>Return on Capital Employed (ROCE) evaluation</li>
-
+<li>Return on capital evaluation</li>
 <li>Cash conversion analysis</li>
-
 <li>Financial forecasting and growth modelling</li>
-
 <li>Annual report data extraction and cleaning</li>
-
-<li>Dashboard development using Excel, PivotTables and KPI reporting</li>
-
+<li>Dashboard development in Excel with KPI reporting</li>
 </ul>
 
 </div>
@@ -418,75 +336,60 @@ class="download-btn">
 <h2>Key Findings</h2>
 
 <div class="finding">
-
 <h3>Strong Post-Pandemic Recovery</h3>
-
 <p>
-Revenue growth accelerated significantly after 2021,
-supported by the recovery of global air travel and
-higher engine flying hours within the Civil Aerospace
-division.
+Revenue rose from £10.9bn in 2021 to £20.1bn in 2025, a compound annual
+growth rate of about 16%, with double-digit growth in every year from 2022.
 </p>
-
 </div>
 
 <div class="finding">
-
-<h3>Profitability Increased Significantly</h3>
-
+<h3>Margins Transformed</h3>
 <p>
-Operational improvements, cost reductions and pricing
-initiatives contributed to a substantial increase in
-profitability across the business.
+The operating margin moved from -17.6% in 2020 to 17.3% in 2025. Operating
+profit grew from £0.4bn in 2021 to £3.46bn, including 40.5% growth in 2025 alone.
 </p>
-
 </div>
 
 <div class="finding">
-
-<h3>ROCE Improved Year-on-Year</h3>
-
+<h3>Returns on Capital Improved Every Year</h3>
 <p>
-Returns generated from invested capital strengthened
-considerably, indicating improved efficiency and
-stronger operational performance.
+Return on capital rose from 11.3% in 2023 to 13.8% in 2024 and 18.9% in 2025,
+showing that profit growth outpaced the capital invested in the business.
 </p>
-
 </div>
 
 <div class="finding">
-
-<h3>Cash Generation Became a Key Strength</h3>
-
+<h3>Net Debt Turned into Net Cash</h3>
 <p>
-Cash conversion improved substantially throughout the
-period, supporting liquidity, debt reduction and future
-investment opportunities.
+Free cash flow swung from -£4.3bn in 2020 to £3.3bn in 2025, with cash conversion
+rising from 78% (2022) to 94% (2025). This took the balance sheet from £5.2bn
+of net debt in 2021 to £1.9bn of net cash at the end of 2025.
 </p>
-
 </div>
 
 </div>
 
 <div class="section">
 
-<h2>Business Recommendations</h2>
+<h2>Forecast &amp; Outlook</h2>
 
 <div class="recommendation">
 
-<h3>Management Action Plan</h3>
+<h3>Forecast Assumptions</h3>
 
 <p>
+My base case assumes 7% annual revenue growth from 2026 to 2030, with the operating
+margin rising from 18.0% to 19.0%. This gives operating profit of £3.86bn in 2026
+and £4.67bn in 2028.
+</p>
 
-The analysis suggests Rolls-Royce should continue its
-focus on operational efficiency, margin improvement and
-strong cash generation. Management should maintain
-investment in high-growth aerospace and defence markets
-while preserving capital discipline. Continued focus on
-cost control and technological innovation should support
-long-term shareholder value creation and sustainable
-growth.
-
+<p>
+This is deliberately more conservative than management's guidance of £4.0–4.2bn
+for 2026 and £4.9–5.2bn by 2028. My margin assumption sits within the guided
+18–20% range, so the gap comes from slower revenue growth. That would reflect
+the main risks: a slowdown in aerospace demand, supply-chain disruption, trade
+tariffs and changes to defence budgets.
 </p>
 
 </div>
@@ -513,7 +416,6 @@ growth.
 <h2>Project Reflection</h2>
 
 <p>
-
 This project strengthened my understanding of financial
 statement analysis, forecasting and corporate performance
 evaluation. Through building the dashboard, I improved my
@@ -522,7 +424,6 @@ communicate findings through concise visual reporting.
 The project also enhanced my commercial awareness and
 demonstrated how financial information can be used to
 support strategic business decisions.
-
 </p>
 
 </div>

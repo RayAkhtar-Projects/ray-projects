@@ -22,14 +22,14 @@ Post-pandemic turnaround of Rolls-Royce Holdings plc, analysed from its 2020–2
 
 - Built a base-case forecast (7% revenue growth, 18–19% margin) and benchmarked it against management guidance
 
-**[Read the case study](https://rayakhtar-projects.github.io/ray-projects/project2.html)** · [Download workbook](rollsroyce-dashboard.xlsx)
+**[Read the case study](https://rayakhtar-projects.github.io/ray-projects/project2.html)** · [Download workbook](files/rollsroyce-dashboard.xlsx)
 
 ---
 
 ### 2. Sales & Profitability Dashboard
 Interactive Excel dashboard analysing **9,994 retail order lines ($2.3m sales)**. Four linked filters drive 8 KPI cards, 8 summary tables and 6 charts.
 
-![Sales dashboard KPI cards](sales1.png)
+![Sales dashboard KPI cards](images/sales1.png)
 
 **Key findings**
 - Orders discounted above 20% lost **$135k**, wiping out almost half of total profit
@@ -39,9 +39,9 @@ Interactive Excel dashboard analysing **9,994 retail order lines ($2.3m sales)**
 
 **Built with:** SUMIFS / COUNTIFS · INDEX-MATCH-LARGE dynamic ranking · data validation filters · named ranges · custom number formats · chart design
 
-![Profit by sub-category and discount level](sales3.png)
+![Profit by sub-category and discount level](images/sales3.png)
 
-**[Read the case study](https://rayakhtar-projects.github.io/ray-projects/project1.html)** · [Download workbook](sales-dashboard.xlsx)
+**[Read the case study](https://rayakhtar-projects.github.io/ray-projects/project1.html)** · [Download workbook](files/sales-dashboard.xlsx)
 
 ---
 
@@ -53,18 +53,23 @@ Interactive Excel dashboard analysing **9,994 retail order lines ($2.3m sales)**
 | Data validation, named ranges | Forecasting | Dashboard design |
 | Interactive dashboards | Profitability & pricing analysis | HTML / CSS |
 
-## Repository contents
-| File | Description |
-|---|---|
-| `index.html` | Portfolio home page |
-| `project1.html` | Sales & Profitability Dashboard case study |
-| `project2.html` | Rolls-Royce Financial Performance case study |
-| `style.css` | Shared stylesheet (Violet II colour scheme) |
-| `sales-dashboard.xlsx` | Sales dashboard workbook |
-| `rollsroyce-dashboard.xlsx` | Rolls-Royce analysis workbook |
-| `Sample Superstore.xlsx` | Raw dataset used for the sales dashboard |
-| `sales1.png` – `sales4.png` | Sales dashboard screenshots |
-| `CV.pdf` | My CV |
+## Repository structure
+```
+ray-projects/
+├── index.html              Portfolio home page
+├── project1.html           Sales & Profitability Dashboard case study
+├── project2.html           Rolls-Royce Financial Performance case study
+├── style.css               Shared stylesheet
+├── README.md
+├── images/                 Dashboard screenshots
+│   ├── sales1.png – sales4.png
+│   └── rollsroyce-dashboard.png
+└── files/                  Downloads
+    ├── CV.pdf
+    ├── sales-dashboard.xlsx
+    ├── rollsroyce-dashboard.xlsx
+    └── superstore-raw-data.xlsx
+```
 
 ## Contact
 - **LinkedIn:** [linkedin.com/in/rayyaan-akhtar](https://www.linkedin.com/in/rayyaan-akhtar)

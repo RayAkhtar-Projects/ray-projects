@@ -41,8 +41,9 @@
     <div class="facts">
         <div><span>Company</span><b>Rolls-Royce Holdings plc</b></div>
         <div><span>Period</span><b>FY2020 – FY2025</b></div>
-        <div><span>Sources</span><b>Annual reports &amp; results</b></div>
+        <div><span>Sources</span><b>Six annual reports</b></div>
         <div><span>Tool</span><b>Microsoft Excel</b></div>
+        <div><span>Outputs</span><b>8 KPIs · 6 charts · 3 scenarios</b></div>
     </div>
 </div>
 
@@ -58,8 +59,9 @@
             COVID-19 pandemic.
         </p>
         <p class="body">
-            An interactive Excel dashboard communicates the key performance indicators, historical
-            trends and a five-year forecast to support strategic decision-making.
+            The interactive Excel dashboard lets the user pick any year to see eight KPIs against the
+            prior year, and switch between bear, base and bull forecast scenarios. Every figure is
+            traced back to a specific annual report on the workbook's Data sheet.
         </p>
     </div>
 </div>
@@ -74,6 +76,7 @@
             <div class="kpi"><span>Operating Margin</span><b>17.3%</b><small>from -17.6% in 2020</small></div>
             <div class="kpi"><span>Return on Capital</span><b>18.9%</b><small>from 11.3% in 2023</small></div>
             <div class="kpi"><span>Cash Conversion</span><b>94%</b><small>FCF ÷ operating profit</small></div>
+            <div class="kpi"><span>Order Backlog</span><b>£88.1bn</b><small>4.4x annual revenue</small></div>
         </div>
         <p class="note">All figures are Rolls-Royce's underlying measures for FY2025 (year to 31 December).</p>
     </div>
@@ -83,10 +86,26 @@
 <div class="block">
     <div class="container">
         <h2>The Dashboard</h2>
-        <p class="hint">Click the screenshot to enlarge it.</p>
+        <p class="hint">Click any screenshot to enlarge it.</p>
+
         <figure>
-            <div class="shot"><img src="images/rollsroyce-dashboard.png" alt="Rolls-Royce financial performance dashboard" onerror="this.parentNode.classList.add('missing');this.parentNode.textContent='Dashboard screenshot coming soon';"></div>
-            <figcaption><b>Rolls-Royce performance dashboard.</b> Revenue, margin, return on capital and cash conversion trends from 2020 to 2025, with the five-year forecast.</figcaption>
+            <div class="shot"><img src="images/rollsroyce1.png" alt="Dashboard header with year and scenario selectors and eight KPI cards" onerror="this.parentNode.classList.add('missing');this.parentNode.textContent='rollsroyce1.png not found';"></div>
+            <figcaption><b>Year selector &amp; KPI cards.</b> Pick any year from 2020 to 2025 and every card updates, with a comparison against the prior year. Shown here: 2021, the low point for net debt.</figcaption>
+        </figure>
+
+        <figure>
+            <div class="shot"><img src="images/rollsroyce2.png" alt="Charts of underlying revenue and operating profit, and operating margin and return on capital, 2020 to 2025" onerror="this.parentNode.classList.add('missing');this.parentNode.textContent='rollsroyce2.png not found';"></div>
+            <figcaption><b>Growth and profitability.</b> Revenue is up 83% since 2021 and operating profit has grown eight-fold. Margin and return on capital are both now above the targets set in 2023.</figcaption>
+        </figure>
+
+        <figure>
+            <div class="shot"><img src="images/rollsroyce3.png" alt="Charts of free cash flow and net cash or debt, and order backlog, 2020 to 2025" onerror="this.parentNode.classList.add('missing');this.parentNode.textContent='rollsroyce3.png not found';"></div>
+            <figcaption><b>Cash and balance sheet.</b> Free cash flow turned positive in 2022, taking the group from £5.2bn of net debt to £1.9bn of net cash. The order backlog reached £88.1bn.</figcaption>
+        </figure>
+
+        <figure>
+            <div class="shot"><img src="images/rollsroyce4.png" alt="Chart of FY2025 revenue and profit by division, and operating profit actuals, forecast and guidance to 2030" onerror="this.parentNode.classList.add('missing');this.parentNode.textContent='rollsroyce4.png not found';"></div>
+            <figcaption><b>Divisions and forecast.</b> Civil Aerospace earns 62% of group profit. The forecast chart follows the scenario selected on the dashboard, with diamonds marking management guidance.</figcaption>
         </figure>
     </div>
 </div>
@@ -143,8 +162,17 @@
                 <p>
                     Free cash flow swung from <span class="neg">-£4.3bn</span> in 2020 to
                     <span class="pos">£3.3bn</span> in 2025, with cash conversion rising from 78% (2022)
-                    to 94% (2025). This took the balance sheet from £5.1bn of net debt in 2021 to
+                    to 94% (2025). This took the balance sheet from £5.2bn of net debt in 2021 to
                     <strong>£1.9bn of net cash</strong> at the end of 2025.
+                </p>
+            </div>
+            <div class="finding">
+                <div class="num">Finding 05</div>
+                <h3>Civil Aerospace drives the profit</h3>
+                <p>
+                    In 2025 Civil Aerospace generated 52% of revenue (£10.4bn) but <strong>62% of operating
+                    profit</strong> (£2.1bn), at a 20.5% margin. Power Systems was the fastest-improving
+                    division, with operating profit up <span class="pos">52%</span> to £852m.
                 </p>
             </div>
         </div>
@@ -164,9 +192,14 @@
             </p>
             <p>
                 This is deliberately more conservative than management's guidance of £4.0–4.2bn for 2026
-                and £4.9–5.1bn by 2028. My margin assumption sits within the guided 18–20% range, so the
+                and £4.9–5.2bn by 2028. My margin assumption sits within the guided 18–20% range, so the
                 gap comes from slower revenue growth. That reflects the main risks: a slowdown in
                 aerospace demand, supply-chain disruption, trade tariffs and changes to defence budgets.
+            </p>
+            <p>
+                The workbook also includes bear (4% growth, 17–17.5% margin) and bull (10% growth,
+                19–20% margin) scenarios, selectable from the dashboard, to show how sensitive the
+                outlook is to these two assumptions.
             </p>
             <div class="table-wrap">
                 <table>
@@ -186,12 +219,13 @@
     <div class="container">
         <h2>Analysis Performed</h2>
         <ul class="list">
-            <li>Extracted and cleaned underlying figures from six years of annual reports</li>
+            <li>Extracted underlying figures from six annual reports, using restated comparatives where a later report revised a year</li>
             <li>Revenue trend and growth analysis (2020–2025)</li>
             <li>Operating profit and margin analysis</li>
             <li>Return on capital and cash conversion evaluation</li>
-            <li>Five-year operating profit forecast, benchmarked against guidance</li>
-            <li>KPI dashboard development in Excel</li>
+            <li>Divisional analysis of Civil Aerospace, Defence and Power Systems (2024 vs 2025)</li>
+            <li>Five-year operating profit forecast with three scenarios, benchmarked against guidance</li>
+            <li>Interactive KPI dashboard with year and scenario selectors (INDEX-MATCH, data validation)</li>
         </ul>
     </div>
 </div>
@@ -204,6 +238,8 @@
             <span class="pill">Financial Statement Analysis</span>
             <span class="pill">Ratio Analysis</span>
             <span class="pill">Forecasting</span>
+            <span class="pill">Scenario Analysis</span>
+            <span class="pill">INDEX-MATCH</span>
             <span class="pill">Financial Modelling</span>
             <span class="pill">Dashboard Design</span>
             <span class="pill">Business Reporting</span>

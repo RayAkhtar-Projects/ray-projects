@@ -18,9 +18,14 @@ Post-pandemic turnaround of Rolls-Royce Holdings plc, analysed from its 2020–2
 | Revenue | £10.9bn (2021) → **£20.1bn** (2025), ~16% CAGR |
 | Operating margin | -17.6% (2020) → **17.3%** (2025) |
 | Return on capital | 11.3% (2023) → **18.9%** (2025) |
-| Balance sheet | £5.1bn net debt (2021) → **£1.9bn net cash** (2025) |
+| Balance sheet | £5.2bn net debt (2021) → **£1.9bn net cash** (2025) |
 
-- Built a base-case forecast (7% revenue growth, 18–19% margin) and benchmarked it against management guidance
+- Civil Aerospace generated 52% of 2025 revenue but 62% of operating profit
+- Interactive dashboard: pick any year for 8 KPIs vs the prior year, and switch between bear, base and bull forecasts benchmarked against management guidance
+
+![Rolls-Royce dashboard KPI cards](images/rollsroyce1.png)
+
+![Rolls-Royce growth and profitability charts](images/rollsroyce2.png)
 
 **[Read the case study](https://rayakhtar-projects.github.io/ray-projects/project2.html)** · [Download workbook](files/rollsroyce-dashboard.xlsx)
 
@@ -63,12 +68,12 @@ ray-projects/
 ├── README.md
 ├── images/                 Dashboard screenshots
 │   ├── sales1.png – sales4.png
-│   └── rollsroyce-dashboard.png
+│   └── rollsroyce1.png – rollsroyce4.png
 └── files/                  Downloads
     ├── CV.pdf
     ├── sales-dashboard.xlsx
     ├── rollsroyce-dashboard.xlsx
-    
+    └── superstore-raw-data.xlsx
 ```
 
 ## Contact

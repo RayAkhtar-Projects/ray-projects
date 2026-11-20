@@ -3,428 +3,318 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sales Analysis Dashboard | Rayyaan Akhtar</title>
-
-<style>
-
-:root{
-    --background:#1f1f27;
-    --card:#2b2b36;
-    --primary:#8b5cf6;
-    --secondary:#6f42c1;
-    --accent:#a78bfa;
-    --text:#f3f4f6;
-    --muted:#cbd5e1;
-    --border:#3f3f46;
-    --highlight:#312e81;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial,sans-serif;
-    background:var(--background);
-    color:var(--text);
-    line-height:1.8;
-}
-
-a{
-    text-decoration:none;
-}
-
-.hero{
-    background:
-    linear-gradient(
-        135deg,
-        #23232d,
-        #4b2e83,
-        #6f42c1
-    );
-    color:white;
-    padding:90px 20px;
-    text-align:center;
-    border-bottom:1px solid var(--border);
-}
-
-.hero h1{
-    font-size:3rem;
-    margin-bottom:15px;
-}
-
-.hero p{
-    color:#ddd6fe;
-    font-size:1.1rem;
-}
-
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.back-btn{
-    display:inline-block;
-    background:var(--secondary);
-    color:white;
-    padding:12px 20px;
-    border-radius:8px;
-    font-weight:bold;
-    margin-bottom:30px;
-    transition:.3s;
-}
-
-.back-btn:hover{
-    background:var(--primary);
-    transform:translateY(-2px);
-}
-
-.section{
-    background:var(--card);
-    border-radius:15px;
-    padding:30px;
-    margin-bottom:25px;
-    border:1px solid var(--border);
-    box-shadow:
-    0 6px 15px rgba(0,0,0,.25);
-}
-
-.section h2{
-    color:var(--primary);
-    margin-bottom:20px;
-}
-
-.section p,
-.section li{
-    color:var(--muted);
-}
-
-ul{
-    padding-left:25px;
-}
-
-.dashboard-image{
-    width:100%;
-    border-radius:15px;
-    border:2px solid var(--border);
-}
-
-.kpi-grid{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(180px,1fr));
-    gap:20px;
-}
-
-.kpi-card{
-    background:#23232d;
-    border-left:
-    6px solid var(--accent);
-    text-align:center;
-    border-radius:12px;
-    padding:25px;
-    box-shadow:
-    0 5px 15px rgba(0,0,0,.35);
-}
-
-.kpi-card h3{
-    color:var(--primary);
-    font-size:2rem;
-}
-
-.kpi-card p{
-    color:var(--muted);
-}
-
-.finding{
-    border-left:
-    5px solid var(--primary);
-    padding-left:15px;
-    margin-bottom:20px;
-}
-
-.finding h3{
-    color:var(--primary);
-    margin-bottom:8px;
-}
-
-.recommendation{
-    background:var(--highlight);
-    border-left:
-    5px solid var(--accent);
-    border-radius:12px;
-    padding:25px;
-}
-
-.recommendation h3{
-    color:#ddd6fe;
-    margin-bottom:15px;
-}
-
-.recommendation p{
-    color:#e5e7eb;
-}
-
-.skill{
-    display:inline-block;
-    background:#4338ca;
-    color:white;
-    padding:10px 18px;
-    margin:5px;
-    border-radius:25px;
-    font-weight:bold;
-}
-
-.download-btn{
-    display:inline-block;
-    background:var(--secondary);
-    color:white;
-    padding:12px 20px;
-    border-radius:8px;
-    margin-top:15px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.download-btn:hover{
-    background:var(--primary);
-    transform:translateY(-2px);
-}
-
-.footer{
-    text-align:center;
-    padding:50px;
-    color:#9ca3af;
-}
-
-@media(max-width:768px){
-
-    .hero h1{
-        font-size:2.2rem;
-    }
-
-}
-</style>
+<title>Sales &amp; Profitability Dashboard | Rayyaan Akhtar</title>
+<meta name="description" content="Case study: an interactive Excel dashboard analysing 9,994 retail order lines and $2.3m of sales to find where a business makes and loses money.">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="hero">
+<nav class="nav">
+    <div class="container">
+        <a href="index.html" class="brand">Rayyaan <span>Akhtar</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#projects">Projects</a></li>
+            <li class="hide-sm"><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="CV.pdf" class="btn btn-sm" target="_blank" rel="noopener">CV</a></li>
+        </ul>
+    </div>
+</nav>
 
-<h1>Sales Analysis Dashboard</h1>
-
-<p>
-Microsoft Excel | Business Intelligence | Data Analysis
-</p>
-
-</div>
+<header class="hero">
+    <div class="container">
+        <p class="breadcrumb"><a href="index.html#projects">Projects</a> &nbsp;/&nbsp; Case Study</p>
+        <h1>Sales &amp; Profitability Dashboard</h1>
+        <p class="lead">
+            Where does a $2.3m retail business make money, and where does it lose it?
+            An interactive Excel dashboard built from 9,994 order lines.
+        </p>
+        <div class="btn-row">
+            <a href="sales-dashboard.xlsx" class="btn btn-light" download>Download Workbook</a>
+            <a href="#findings" class="btn btn-outline-light">Jump to Findings</a>
+        </div>
+    </div>
+</header>
 
 <div class="container">
-
-<a href="index.html" class="back-btn">
-← Back to Portfolio
-</a>
-
-<div class="section">
-
-<h2>Project Overview</h2>
-
-<p>
-This project involved analysing a retail sales dataset
-containing approximately 10,000 transactions to identify
-trends in sales performance, profitability and customer
-behaviour. An interactive dashboard was developed in
-Microsoft Excel using PivotTables, PivotCharts, KPI cards
-and slicers to support business decision-making.
-</p>
-
+    <div class="facts">
+        <div><span>Dataset</span><b>Sample Superstore, 9,994 rows</b></div>
+        <div><span>Tool</span><b>Microsoft Excel</b></div>
+        <div><span>Outputs</span><b>8 KPIs · 8 tables · 6 charts</b></div>
+        <div><span>Interactivity</span><b>4 linked filters</b></div>
+    </div>
 </div>
 
-<div class="section">
-
-<h2>Dashboard Preview</h2>
-
-<img
-class="dashboard-image"
-src="sales-dashboard.png"
-alt="Sales Dashboard Screenshot">
-
-<br>
-
-<a href="sales-dashboard.xlsx"
-class="download-btn">
-📊 Download Excel Workbook
-</a>
-
+<!-- ================= SUMMARY ================= -->
+<div class="block">
+    <div class="container">
+        <h2>Executive Summary</h2>
+        <p class="body">
+            The business is profitable overall, earning a <strong>12.5% margin</strong> on $2.3m of sales,
+            but that headline hides a serious problem. <strong>Heavy discounting destroys value</strong>:
+            orders discounted by more than 20% lost $135k, which cancelled out almost half of total profit.
+            The same pattern explains the weak Furniture category and the underperforming Central region.
+        </p>
+        <p class="body">
+            Capping discounts at 20% and repricing a small number of loss-making product lines would
+            be the fastest route to higher margins.
+        </p>
+    </div>
 </div>
 
-<div class="section">
-
-<h2>Business Questions</h2>
-
-<ul>
-<li>Which regions generated the strongest sales performance?</li>
-<li>Which product categories contributed most profit?</li>
-<li>How did discounting affect profitability?</li>
-<li>What customer segments generated the highest revenue?</li>
-<li>Which products should management prioritise?</li>
-</ul>
-
+<!-- ================= KPIs ================= -->
+<div class="block">
+    <div class="container">
+        <h2>Headline KPIs</h2>
+        <div class="kpis">
+            <div class="kpi"><span>Total Sales</span><b>$2.30m</b><small>9,994 order lines</small></div>
+            <div class="kpi"><span>Total Profit</span><b>$286.4k</b><small>across all categories</small></div>
+            <div class="kpi"><span>Profit Margin</span><b>12.5%</b><small>profit ÷ sales</small></div>
+            <div class="kpi"><span>Units Sold</span><b>37,873</b><small>3.8 units per line</small></div>
+            <div class="kpi"><span>Avg Discount</span><b>15.6%</b><small>per order line</small></div>
+            <div class="kpi"><span>Loss-Making Lines</span><b>18.7%</b><small>1,871 lines sold at a loss</small></div>
+        </div>
+    </div>
 </div>
 
-<div class="section">
+<!-- ================= DASHBOARD ================= -->
+<div class="block">
+    <div class="container">
+        <h2>The Dashboard</h2>
+        <p class="hint">Click any screenshot to enlarge it.</p>
 
-<h2>Key Dashboard Metrics</h2>
+        <figure>
+            <div class="shot"><img src="sales1.png" alt="Dashboard header with four filter dropdowns and eight KPI cards" onerror="this.parentNode.classList.add('missing');this.parentNode.textContent='sales1.png not found';"></div>
+            <figcaption><b>Filters &amp; KPI cards.</b> Four dropdowns (Region, Segment, Category, Ship Mode) filter every figure on the page. Each card compares the filtered value with the company total or average.</figcaption>
+        </figure>
 
-<div class="kpi-grid">
+        <figure>
+            <div class="shot"><img src="sales2.png" alt="Clustered column charts of sales and profit by region and by customer segment" onerror="this.parentNode.classList.add('missing');this.parentNode.textContent='sales2.png not found';"></div>
+            <figcaption><b>Region and customer segment.</b> The West leads on both sales and profit. Central turns $501k of sales into only $40k of profit.</figcaption>
+        </figure>
 
-<div class="kpi-card">
-<h3>$2.3m</h3>
-<p>Total Sales</p>
+        <figure>
+            <div class="shot"><img src="sales3.png" alt="Profit by sub-category bar chart and profit margin by discount level column chart" onerror="this.parentNode.classList.add('missing');this.parentNode.textContent='sales3.png not found';"></div>
+            <figcaption><b>Sub-category and discount level.</b> Three sub-categories lose money, and margins turn negative once discounts go above 20%.</figcaption>
+        </figure>
+
+        <figure>
+            <div class="shot"><img src="sales4.png" alt="Top 10 states by sales bar chart and sales and profit by product category" onerror="this.parentNode.classList.add('missing');this.parentNode.textContent='sales4.png not found';"></div>
+            <figcaption><b>Top states and product categories.</b> Furniture sells almost as much as Technology but earns one-eighth of the profit.</figcaption>
+        </figure>
+    </div>
 </div>
 
-<div class="kpi-card">
-<h3>$286.4k</h3>
-<p>Total Profit</p>
+<!-- ================= QUESTIONS ================= -->
+<div class="block">
+    <div class="container">
+        <h2>Business Questions</h2>
+        <ul class="list">
+            <li>Which regions and customer segments generate the most sales and profit?</li>
+            <li>Which product categories and sub-categories make money, and which lose it?</li>
+            <li>How does discounting affect profitability?</li>
+            <li>Which states drive revenue, and which are loss-making?</li>
+            <li>What should management change to improve margins?</li>
+        </ul>
+    </div>
 </div>
 
-<div class="kpi-card">
-<h3>12.47%</h3>
-<p>Profit Margin</p>
+<!-- ================= FINDINGS ================= -->
+<div class="block" id="findings">
+    <div class="container">
+        <h2>Key Findings</h2>
+        <div class="findings">
+
+            <div class="finding">
+                <div class="num">Finding 01</div>
+                <h3>Discounts above 20% wiped out almost half of total profit</h3>
+                <p>
+                    Orders with no discount earned a <span class="pos">29.5%</span> margin. Orders discounted
+                    by more than 20% made a combined loss of <span class="neg">-$135.4k</span> on $362.8k of
+                    sales (a -37.3% margin).
+                </p>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Discount level</th><th>Profit margin</th></tr></thead>
+                        <tbody>
+                            <tr><td>No discount</td><td class="pos">29.5%</td></tr>
+                            <tr><td>1% – 20%</td><td class="pos">11.9%</td></tr>
+                            <tr><td>21% – 40%</td><td class="neg">-15.3%</td></tr>
+                            <tr><td>Over 40%</td><td class="neg">-77.4%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="finding">
+                <div class="num">Finding 02</div>
+                <h3>Furniture barely broke even</h3>
+                <p>
+                    Technology ($145.5k profit, 17.4% margin) and Office Supplies ($122.5k, 17.0%) earned
+                    almost all of the profit. Furniture generated $742.0k of sales but only $18.5k of profit
+                    (a <span class="neg">2.5%</span> margin), dragged down by Tables
+                    (<span class="neg">-$17.7k</span>) and Bookcases (<span class="neg">-$3.5k</span>).
+                </p>
+            </div>
+
+            <div class="finding">
+                <div class="num">Finding 03</div>
+                <h3>Central's weak margin is a discounting problem</h3>
+                <p>
+                    The West led on both sales ($725.5k) and margin (14.9%). Central earned only a
+                    <span class="neg">7.9%</span> margin on $501.2k of sales, about half the West's. Central's
+                    average discount was <strong>24.0%</strong>, compared with <strong>10.9%</strong> in the West.
+                </p>
+            </div>
+
+            <div class="finding">
+                <div class="num">Finding 04</div>
+                <h3>Profit is highly concentrated</h3>
+                <p>
+                    Just three of seventeen sub-categories (Copiers, Phones and Accessories) generated
+                    <strong>49.6%</strong> of total profit. Texas was the third-largest state by sales
+                    but lost <span class="neg">-$25.7k</span>, the most of any state.
+                </p>
+            </div>
+
+        </div>
+    </div>
 </div>
 
-<div class="kpi-card">
-<h3>37,873</h3>
-<p>Units Sold</p>
+<!-- ================= RECOMMENDATIONS ================= -->
+<div class="block">
+    <div class="container">
+        <h2>Recommendations</h2>
+        <div class="callout">
+            <h3>Management Action Plan</h3>
+            <ol>
+                <li><strong>Cap standard discounts at 20%</strong>, with manager approval required above that level.</li>
+                <li><strong>Reprice or reduce focus on Tables and Bookcases</strong> to lift the 2.5% Furniture margin.</li>
+                <li><strong>Bring Central's discounting in line with the West's.</strong> Closing half its margin gap would add roughly $18k of profit.</li>
+                <li><strong>Review the loss-making states</strong>, starting with Texas, Ohio and Pennsylvania.</li>
+                <li><strong>Protect and grow</strong> the high-margin Copiers, Phones and Accessories lines.</li>
+            </ol>
+        </div>
+    </div>
 </div>
 
+<!-- ================= METHOD ================= -->
+<div class="block">
+    <div class="container">
+        <h2>How I Built It</h2>
+        <ol class="steps">
+            <li>
+                <strong>Prepared the data.</strong> I converted the raw data into an Excel Table and
+                created named ranges (<code>dSales</code>, <code>dProfit</code>, <code>dRegion</code>…) so every
+                formula reads clearly.
+            </li>
+            <li>
+                <strong>Built the filters.</strong> I added data-validation dropdowns with an "All"
+                option. A helper cell converts "All" into the wildcard <code>"*"</code>, so one formula
+                works whether a filter is on or off.
+                <pre><code>=IF(Dashboard!C5="All","*",Dashboard!C5)</code></pre>
+            </li>
+            <li>
+                <strong>Built formula-driven pivot tables.</strong> Each summary table uses
+                <code>SUMIFS</code> and <code>COUNTIFS</code> with all four filters applied, so the
+                tables recalculate instantly without refreshing.
+                <pre><code>=SUMIFS(dSales, dRegion,$C$5, dSegment,$C$6, dCat,$C$7, dShip,$C$8, dRegion,B13)</code></pre>
+            </li>
+            <li>
+                <strong>Ranked the Top 10 states dynamically</strong> with <code>INDEX</code>,
+                <code>MATCH</code> and <code>LARGE</code>, using a small tie-breaker so states with
+                equal values still rank uniquely when filters are applied.
+            </li>
+            <li>
+                <strong>Designed the KPI cards and charts</strong> using custom number formats
+                (e.g. <code>$#,##0.0,"K"</code>), a consistent colour for sales and profit across
+                every chart, and descriptive titles and data labels.
+            </li>
+            <li>
+                <strong>Checked the numbers.</strong> I reconciled totals against the raw data and
+                tested filter combinations to make sure there were no errors.
+            </li>
+        </ol>
+    </div>
 </div>
 
+<!-- ================= SKILLS ================= -->
+<div class="block">
+    <div class="container">
+        <h2>Skills Demonstrated</h2>
+        <div class="pill-row">
+            <span class="pill">SUMIFS / COUNTIFS</span>
+            <span class="pill">INDEX-MATCH</span>
+            <span class="pill">Data Validation</span>
+            <span class="pill">Named Ranges</span>
+            <span class="pill">Dashboard Design</span>
+            <span class="pill">KPI Reporting</span>
+            <span class="pill">Data Visualisation</span>
+            <span class="pill">Profitability Analysis</span>
+            <span class="pill">Commercial Awareness</span>
+        </div>
+    </div>
 </div>
 
-<div class="section">
-
-<h2>Analysis Performed</h2>
-
-<ul>
-<li>Regional sales and profitability analysis</li>
-<li>Product category and sub-category performance evaluation</li>
-<li>Customer segment comparison</li>
-<li>Discount impact assessment</li>
-<li>KPI dashboard development</li>
-<li>Interactive reporting using slicers and PivotTables</li>
-</ul>
-
+<!-- ================= REFLECTION ================= -->
+<div class="block">
+    <div class="container">
+        <h2>Reflection</h2>
+        <p class="body">
+            The biggest lesson was that sales and profit can pull in opposite directions: the
+            business's largest revenue lines were not always its most profitable, and its discounting
+            policy was quietly destroying value. Building the dashboard with formulas rather than
+            standard PivotTables also taught me how to design models that recalculate reliably and
+            stay transparent to whoever uses them next.
+        </p>
+        <p class="body">
+            Next, I would add order dates to analyse seasonality, and model the profit impact of
+            different discount caps.
+        </p>
+    </div>
 </div>
 
-<div class="section">
-
-<h2>Key Findings</h2>
-
-<div class="finding">
-<h3>Discounts Above 20% Wiped Out Profit</h3>
-<p>
-Orders with no discount earned a 29.5% margin and orders discounted up to 20%
-earned 11.9%. Orders discounted by more than 20% made a combined loss of
-$135.4k (a -37.3% margin) on $362.8k of sales, cancelling out almost half
-of the business's total profit.
-</p>
+<div class="page-end">
+    <div class="container">
+        <div class="cta">
+            <div>
+                <h3>Explore the workbook</h3>
+                <p>Download the Excel file to try the filters and inspect the formulas.</p>
+            </div>
+            <div class="btn-row">
+                <a href="sales-dashboard.xlsx" class="btn" download>Download Workbook</a>
+                <a href="project2.html" class="btn btn-ghost">Next: Rolls-Royce →</a>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="finding">
-<h3>Furniture Barely Broke Even</h3>
-<p>
-Technology ($145.5k profit, 17.4% margin) and Office Supplies ($122.5k, 17.0%)
-drove almost all profit. Furniture generated $742.0k of sales but only
-$18.5k of profit (2.5% margin), dragged down by Tables (-$17.7k) and
-Bookcases (-$3.5k).
-</p>
+<footer>
+    <div class="container">
+        <span>© 2026 Rayyaan Akhtar</span>
+        <span><a href="index.html">Back to portfolio</a></span>
+    </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" aria-label="Close">&times;</button>
+    <img src="" alt="">
 </div>
-
-<div class="finding">
-<h3>The Central Region Underperformed</h3>
-<p>
-The West led on both sales ($725.5k) and margin (14.9%), while Central
-achieved only a 7.9% margin on $501.2k of sales, about half the West's margin.
-</p>
-</div>
-
-<div class="finding">
-<h3>Profit Was Highly Concentrated</h3>
-<p>
-Just three of seventeen sub-categories (Copiers, Phones and Accessories)
-generated 49.6% of total profit. Consumer customers accounted for 50.6%
-of sales.
-</p>
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Business Recommendations</h2>
-
-<div class="recommendation">
-
-<h3>Management Action Plan</h3>
-
-<ul>
-<li>Cap standard discounts at 20%, and require approval above that level, since deeper discounts were loss-making on average.</li>
-<li>Review pricing and discounting on Tables and Bookcases, or reduce focus on them, to lift the 2.5% Furniture margin.</li>
-<li>Investigate why the Central region's margin is half the West's, starting with its discount mix.</li>
-<li>Protect and grow the high-margin Copiers, Phones and Accessories lines.</li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Skills Demonstrated</h2>
-
-<span class="skill">Excel</span>
-<span class="skill">PivotTables</span>
-<span class="skill">PivotCharts</span>
-<span class="skill">Dashboard Design</span>
-<span class="skill">Business Analysis</span>
-<span class="skill">KPI Reporting</span>
-<span class="skill">Data Visualisation</span>
-<span class="skill">Commercial Awareness</span>
-
-</div>
-
-<div class="section">
-
-<h2>Project Reflection</h2>
-
-<p>
-This project strengthened my ability to work with large
-datasets, build interactive dashboards and communicate
-business insights through data. It also improved my
-understanding of how organisations use management
-information to support strategic decision-making.
-</p>
-
-</div>
-
-</div>
-
-<div class="footer">
-
-<p>
-Rayyaan Akhtar | Finance Portfolio
-</p>
-
-<p>
-Accounting • Finance • Corporate Banking
-</p>
-
-</div>
+<script>
+(function(){
+    var box=document.getElementById('lightbox'), big=box.querySelector('img');
+    document.querySelectorAll('.shot img').forEach(function(img){
+        img.parentNode.addEventListener('click',function(){
+            if(img.parentNode.classList.contains('missing')) return;
+            big.src=img.src; big.alt=img.alt; box.classList.add('open'); box.setAttribute('aria-hidden','false');
+        });
+    });
+    function close(){box.classList.remove('open'); box.setAttribute('aria-hidden','true');}
+    box.addEventListener('click',close);
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
 
 </body>
 </html>

@@ -3,443 +3,235 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Rayyaan Akhtar | Finance Portfolio</title>
-
-<style>
-
-:root{
-    --background:#1f1f27;
-    --card:#2b2b36;
-    --primary:#8b5cf6;
-    --secondary:#6f42c1;
-    --accent:#a78bfa;
-    --text:#f3f4f6;
-    --muted:#cbd5e1;
-    --border:#3f3f46;
-    --highlight:#312e81;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial,sans-serif;
-    background:var(--background);
-    color:var(--text);
-    line-height:1.6;
-}
-
-a{
-    text-decoration:none;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-header{
-    background:
-    linear-gradient(
-        135deg,
-        #23232d,
-        #4b2e83,
-        #6f42c1
-    );
-    text-align:center;
-    padding:100px 20px;
-    border-bottom:
-    1px solid var(--border);
-}
-
-header h1{
-    font-size:4rem;
-    margin-bottom:15px;
-}
-
-header p{
-    color:#ddd6fe;
-    font-size:1.2rem;
-}
-
-.hero-buttons{
-    margin-top:30px;
-}
-
-.btn{
-    display:inline-block;
-    background:var(--secondary);
-    color:white;
-    padding:12px 25px;
-    margin:10px;
-    border-radius:8px;
-    transition:.3s;
-    font-weight:bold;
-}
-
-.btn:hover{
-    background:var(--primary);
-    transform:translateY(-2px);
-}
-
-section{
-    padding:60px 0;
-}
-
-.section-title{
-    font-size:2rem;
-    margin-bottom:30px;
-    text-align:center;
-    color:var(--primary);
-}
-
-.about{
-    text-align:center;
-    max-width:850px;
-    margin:auto;
-    color:var(--muted);
-}
-
-.stats{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-}
-
-.stat-card{
-    background:var(--card);
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-    border-left:
-    6px solid var(--accent);
-    box-shadow:
-    0 5px 15px rgba(0,0,0,.30);
-}
-
-.stat-card h2{
-    color:var(--primary);
-    font-size:2.5rem;
-}
-
-.stat-card p{
-    color:var(--muted);
-}
-
-.projects{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:var(--card);
-    border-radius:15px;
-    overflow:hidden;
-    border:1px solid var(--border);
-    transition:.3s;
-    box-shadow:
-    0 5px 15px rgba(0,0,0,.25);
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:
-    0 10px 25px rgba(111,66,193,.30);
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:20px;
-}
-
-.card h3{
-    margin-bottom:10px;
-    color:var(--primary);
-}
-
-.card p{
-    color:var(--muted);
-}
-
-.skills{
-    text-align:center;
-}
-
-.skill{
-    display:inline-block;
-    padding:10px 18px;
-    margin:8px;
-    border-radius:30px;
-    background:#4338ca;
-    color:white;
-    font-weight:bold;
-}
-
-footer{
-    text-align:center;
-    padding:40px;
-    color:#9ca3af;
-}
-
-.contact-links{
-    text-align:center;
-}
-
-.contact-links a{
-    display:inline-block;
-    margin:10px;
-}
-
-@media(max-width:768px){
-
-    header h1{
-        font-size:2.5rem;
-    }
-
-    .projects{
-        grid-template-columns:1fr;
-    }
-
-}
-
-</style>
+<title>Rayyaan Akhtar | Accounting &amp; Finance Portfolio</title>
+<meta name="description" content="Rayyaan Akhtar, Accounting &amp; Finance student at the University of West London. Excel-based financial analysis, forecasting and dashboard projects.">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<nav class="nav">
+    <div class="container">
+        <a href="index.html" class="brand">Rayyaan <span>Akhtar</span></a>
+        <ul class="nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li class="hide-sm"><a href="#about">About</a></li>
+            <li class="hide-sm"><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="CV.pdf" class="btn btn-sm" target="_blank" rel="noopener">CV</a></li>
+        </ul>
+    </div>
+</nav>
 
-<h1>Rayyaan Akhtar</h1>
+<header class="hero">
+    <div class="container">
+        <p class="eyebrow">Accounting &amp; Finance Portfolio</p>
+        <h1>Rayyaan Akhtar</h1>
+        <p class="lead">
+            Accounting &amp; Finance student at the University of West London, building
+            practical skills in financial statement analysis, forecasting and data-driven
+            reporting, with a focus on corporate banking and corporate finance.
+        </p>
+        <div class="btn-row">
+            <a href="#projects" class="btn btn-light">View Projects</a>
+            <a href="CV.pdf" class="btn btn-outline-light" target="_blank" rel="noopener">Download CV</a>
+            <a href="https://www.linkedin.com/in/rayyaan-akhtar" class="btn btn-outline-light" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
 
-<p>
-Accounting & Finance Student
-</p>
-
-<p>
-Aspiring finance professional interested in investment banking
-banking, corporate finance and financial analysis
-</p>
-
-<div class="hero-buttons">
-
-<a href="CV.pdf"
-class="btn" target="_blank">
-Download CV
-</a>
-
-<a href="https://www.linkedin.com/in/rayyaan-akhtar"
-class="btn" target="_blank">
-LinkedIn
-</a>
-
-<a href="https://github.com/RayAkhtar-Projects"
-class="btn" target="_blank">
-GitHub
-</a>
-
-</div>
-
+        <div class="hero-facts">
+            <div><span>Studying</span><b>BSc Accounting &amp; Finance, UWL</b></div>
+            <div><span>Previously</span><b>MSci Physics with Astrophysics, King's College London</b></div>
+            <div><span>Interests</span><b>Corporate Banking · Corporate Finance · Financial Analysis</b></div>
+        </div>
+    </div>
 </header>
 
-<section>
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+    <div class="container">
+        <div class="section-head">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Projects</h2>
+            <p>Independent Excel projects, each built from raw data and written up as a short case study with findings and recommendations.</p>
+        </div>
 
-<div class="container">
+        <div class="projects">
 
-<h2 class="section-title">About Me</h2>
+            <article class="project">
+                <div class="thumb">
+                    <img src="rollsroyce-dashboard.png" alt="Rolls-Royce financial performance dashboard"
+                         onerror="this.parentNode.classList.add('missing')">
+                    <div class="placeholder">Rolls-Royce Holdings plc<br>FY2020 – FY2025</div>
+                </div>
+                <div class="project-body">
+                    <div class="tags">
+                        <span class="tag">Financial Analysis</span>
+                        <span class="tag">Forecasting</span>
+                        <span class="tag">Annual Reports</span>
+                    </div>
+                    <h3>Rolls-Royce Financial Performance Analysis</h3>
+                    <p>Post-pandemic turnaround of Rolls-Royce Holdings plc, analysed from its 2020–2025 annual reports, with a five-year operating profit forecast.</p>
+                    <ul class="results">
+                        <li>Operating margin moved from <strong>-17.6%</strong> (2020) to <strong>17.3%</strong> (2025)</li>
+                        <li>Balance sheet swung from £5.2bn net debt to <strong>£1.9bn net cash</strong></li>
+                        <li>Base-case forecast benchmarked against management guidance</li>
+                    </ul>
+                    <div class="btn-row">
+                        <a href="project2.html" class="btn">Read Case Study</a>
+                        <a href="rollsroyce-dashboard.xlsx" class="btn btn-ghost" download>Workbook</a>
+                    </div>
+                </div>
+            </article>
 
-<p class="about">
+            <article class="project">
+                <div class="thumb">
+                    <img src="sales2.png" alt="Sales and profit by region and customer segment charts"
+                         onerror="this.parentNode.classList.add('missing')">
+                    <div class="placeholder">Sales &amp; Profitability Dashboard</div>
+                </div>
+                <div class="project-body">
+                    <div class="tags">
+                        <span class="tag">Dashboard Design</span>
+                        <span class="tag">Profitability</span>
+                        <span class="tag">Advanced Excel</span>
+                    </div>
+                    <h3>Sales &amp; Profitability Dashboard</h3>
+                    <p>Interactive Excel dashboard analysing 9,994 retail order lines ($2.3m of sales) to find where the business makes and loses money.</p>
+                    <ul class="results">
+                        <li>Discounts above 20% lost <strong>$135k</strong>, almost half of total profit</li>
+                        <li>Furniture earned a <strong>2.5%</strong> margin on $742k of sales</li>
+                        <li>4 linked filters drive 8 KPIs, 8 summary tables and 6 charts</li>
+                    </ul>
+                    <div class="btn-row">
+                        <a href="project1.html" class="btn">Read Case Study</a>
+                        <a href="sales-dashboard.xlsx" class="btn btn-ghost" download>Workbook</a>
+                    </div>
+                </div>
+            </article>
 
-I am a first-year Accounting & Finance student at the
-University of West London with a strong interest in
-corporate banking, financial analysis and data-driven
-decision making. I previously studies Physics with Astrophysics
-at King's College London, giving me a strong quantitative 
-foundation.
+            <!-- Corporate Credit Assessment: unhide when the project is finished
+            <article class="project">
+                <div class="thumb">
+                    <img src="credit-analysis.png" alt="Corporate credit assessment"
+                         onerror="this.parentNode.classList.add('missing')">
+                    <div class="placeholder">Corporate Credit Assessment</div>
+                </div>
+                <div class="project-body">
+                    <div class="tags"><span class="tag">Credit Analysis</span><span class="tag">Lending</span></div>
+                    <h3>Corporate Credit Assessment</h3>
+                    <p>Credit risk analysis and lending recommendation using financial statement data.</p>
+                    <div class="btn-row"><a href="#" class="btn">Coming Soon</a></div>
+                </div>
+            </article>
+            -->
 
-Through independent projects I have developed practical
-skills in Excel, data visualisation, financial statement
-analysis and business reporting.
-
-</p>
-
-</div>
-
+        </div>
+    </div>
 </section>
 
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Projects</h2>
-
-<div class="projects">
-
-<div class="card">
-
-<img src="rollsroyce-dashboard.png"
-alt="Rolls-Royce Financial Dashboard">
-
-<div class="card-content">
-
-<h3>Rolls-Royce Financial Performance Dashboard</h3>
-
-<p>
-Financial analysis of Rolls-Royce Holdings plc using
-annual report data from 2020–2025. The dashboard
-examines revenue growth, profitability, ROCE,
-cash conversion and future performance forecasts.
-</p>
-
-<br>
-
-<a href="project2.html" class="btn">
-View Project →
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="sales-dashboard.png"
-alt="Sales Analysis Dashboard">
-
-<div class="card-content">
-
-<h3>Sales Analysis Dashboard</h3>
-
-<p>
-Interactive Excel dashboard analysing
-sales performance, profitability,
-discount impact and regional trends.
-</p>
-
-<br>
-
-<a href="project1.html" class="btn">
-View Project →
-</a>
-
-</div>
-
-</div>
-
-
-
-<!-- Corporate Credit Assessment: unhide when the project is finished
-<div class="card">
-
-<img src="credit-analysis.jpg"
-alt="Credit Analysis">
-
-<div class="card-content">
-
-<h3>Corporate Credit Assessment</h3>
-
-<p>
-Credit risk analysis and lending
-recommendations using financial
-statement data.
-</p>
-
-<br>
-
-<a href="#"
-class="btn">
-Coming Soon
-</a>
-
-</div>
-
-</div>
--->
-
-</div>
-
-</div>
-
+<!-- ================= ABOUT ================= -->
+<section id="about" class="alt">
+    <div class="container">
+        <div class="section-head">
+            <p class="eyebrow">About</p>
+            <h2>Quantitative background, commercial focus</h2>
+        </div>
+        <div class="about-grid">
+            <div>
+                <p>
+                    I am a first-year Accounting &amp; Finance student at the University of West London,
+                    with a strong interest in corporate banking, financial analysis and data-driven
+                    decision making.
+                </p>
+                <p>
+                    Before switching to finance, I studied Physics with Astrophysics at King's College
+                    London, where I was also a Subject Ambassador. That gave me a rigorous quantitative
+                    foundation, which I now apply to company financials and business data.
+                </p>
+                <p>
+                    Through independent projects I have developed practical skills in Excel modelling,
+                    financial statement analysis, forecasting and presenting findings clearly to
+                    decision-makers.
+                </p>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="when">2026 – Present</div>
+                    <div class="what">BSc Accounting &amp; Finance</div>
+                    <div class="where">University of West London</div>
+                </li>
+                <li>
+                    <div class="when">2024 – 2025</div>
+                    <div class="what">MSci Physics with Astrophysics (Year 1)</div>
+                    <div class="where">King's College London · Subject Ambassador</div>
+                </li>
+                <li>
+                    <div class="when">Until 2024</div>
+                    <div class="what">Secondary &amp; Sixth Form</div>
+                    <div class="where">Dr Challoner's Grammar School</div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Skills</h2>
-
-<div class="skills">
-
-<span class="skill">Excel</span>
-<span class="skill">Pivot Tables</span>
-<span class="skill">Financial Analysis</span>
-<span class="skill">Financial Modelling</span>
-<span class="skill">Ratio Analysis</span>
-<span class="skill">Valuation</span>
-<span class="skill">Accounting</span>
-<span class="skill">Data Visualisation</span>
-<span class="skill">Forecasting</span>
-<span class="skill">Dashboard Design</span>
-
-</div>
-
-</div>
-
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+    <div class="container">
+        <div class="section-head">
+            <p class="eyebrow">Toolkit</p>
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h3>Excel &amp; Data</h3>
+                <ul>
+                    <li>SUMIFS, COUNTIFS, INDEX-MATCH</li>
+                    <li>PivotTables &amp; PivotCharts</li>
+                    <li>Data validation &amp; named ranges</li>
+                    <li>Interactive dashboards &amp; KPI design</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3>Finance &amp; Accounting</h3>
+                <ul>
+                    <li>Financial statement analysis</li>
+                    <li>Ratio analysis (margins, ROCE, cash conversion)</li>
+                    <li>Forecasting &amp; scenario thinking</li>
+                    <li>Profitability &amp; pricing analysis</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3>Communication</h3>
+                <ul>
+                    <li>Data visualisation</li>
+                    <li>Business reporting &amp; recommendations</li>
+                    <li>Presenting to non-specialists</li>
+                    <li>HTML / CSS (this site)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Connect</h2>
-
-<div class="contact-links">
-
-<a href="https://www.linkedin.com/in/rayyaan-akhtar"
-class="btn"
-target="_blank">
-LinkedIn
-</a>
-
-<a href="https://github.com/RayAkhtar-Projects"
-class="btn"
-target="_blank">
-GitHub
-</a>
-
-<a href="mailto:ray.akhtar1@outlook.com"
-class="btn">
-Email Me
-</a>
-
-</div>
-
-</div>
-
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Get in touch</h2>
+        <p>I'm open to internships, insight programmes and conversations about careers in finance.</p>
+        <div class="btn-row">
+            <a href="mailto:ray.akhtar1@outlook.com" class="btn btn-light">Email Me</a>
+            <a href="https://www.linkedin.com/in/rayyaan-akhtar" class="btn btn-outline-light" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/RayAkhtar-Projects" class="btn btn-outline-light" target="_blank" rel="noopener">GitHub</a>
+        </div>
+    </div>
 </section>
 
 <footer>
-
-<p>
-© 2026 Rayyaan Akhtar
-</p>
-
-<p>
-Accounting • Finance • Corporate Banking
-</p>
-
+    <div class="container">
+        <span>© 2026 Rayyaan Akhtar</span>
+        <span>Accounting · Finance · Corporate Banking</span>
+    </div>
 </footer>
 
 </body>
